@@ -6,17 +6,7 @@ import resolvers from './resolvers'
 const typeDefs = `
   type Show {
     id        : Int
-    characters: [Character]
-    network   : String
     title     : String
-  }
-
-  type Character {
-    id         : Int
-    description: String
-    name       : String
-    quote      : String
-    show       : Show
   }
 
   type Query {
